@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "portal",
+  "repo": "portal-stack-module",
+  "runtimeId": "portal",
+  "lifecycle": "active",
+  "dependencies": [
+    "stack-foundation"
+  ],
+  "overlays": [
+    "stack.compose/portal.yml",
+    "stack.containers/portal",
+    "stack.kotlin/portal"
+  ],
+  "sourceRepo": "portal"
+}
