@@ -9,6 +9,7 @@
   ],
   "overlays": [
     "stack.compose/portal.yml",
+    "stack.config/portal-profiles.json",
     "stack.containers/portal",
     "stack.kotlin/portal"
   ],
