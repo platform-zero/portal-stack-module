@@ -11,7 +11,8 @@ type ProfileSummary = {
 };
 
 const screenshotRoot = process.env.PLAYWRIGHT_SCREENSHOTS_DIR
-  || path.resolve(process.cwd(), 'test-results/screenshots/portal-role-dashboards');
+  || path.resolve(process.cwd(), 'test-results/screenshots');
+const moduleScreenshotRoot = path.join(screenshotRoot, 'portal', 'role-dashboards');
 
 function slug(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -40,7 +41,7 @@ test.describe('portal role dashboards', () => {
       'ai-data-analyst',
       'platform-operator-security',
     ]);
-    fs.mkdirSync(screenshotRoot, { recursive: true });
+    fs.mkdirSync(moduleScreenshotRoot, { recursive: true });
 
     for (const [index, profile] of profiles.entries()) {
       await page.evaluate(async (profileId) => {
@@ -55,7 +56,7 @@ test.describe('portal role dashboards', () => {
       await expect(page.getByText('Role-specific live summary with safe metadata only')).toHaveCount(0);
 
       await page.screenshot({
-        path: path.join(screenshotRoot, `${String(index + 1).padStart(2, '0')}-${slug(profile.profile)}.png`),
+        path: path.join(moduleScreenshotRoot, `${String(index + 1).padStart(2, '0')}-${slug(profile.profile)}.png`),
         fullPage: false,
       });
     }
