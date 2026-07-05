@@ -18,14 +18,14 @@ test.use({ storageState: authenticatedSessionState });
   test('Portal - Access with forward auth', async ({ page }) => {
     await testForwardAuthService(
       page,
-      'Stack Portal',
+      'Homepage Dashboard',
       serviceUrl('portal'),
-      /(Stack Portal|contract-backed modules|SOGo)/i
+      /(Datamancy|Keycloak|Grafana|BookStack)/i
     );
 
     await expect(
       page.getByRole('link', { name: /SOGo/i }).first(),
-      'Portal should advertise SOGo as a client-facing mail/calendar app'
+      'Homepage should advertise SOGo as a client-facing mail/calendar app'
     ).toBeVisible();
     await expect(page.getByText(/Mail, calendar, and contacts/i).first()).toBeVisible();
   });

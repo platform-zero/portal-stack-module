@@ -17,11 +17,8 @@
   "smokeUnsupportedReason": "requires generated bundle context, deployed networking, secrets, or service dependencies",
   "overlays": [
     "stack.compose/portal.yml",
-    "stack.config/portal-profiles.json",
-    "stack.containers/portal",
-    "stack.kotlin/portal",
+    "stack.config/homepage",
     "stack.containers/test-runner/playwright-tests/tests/deep/forward-auth/homepage.spec.ts",
-    "stack.containers/test-runner/playwright-tests/tests/visual/portal-role-dashboards.spec.ts",
     "stack.kotlin/test-runner/src/main/kotlin/org/webservices/testrunner/suites/PortalUtilityServicesTests.kt"
   ],
   "sourceRepo": "portal",

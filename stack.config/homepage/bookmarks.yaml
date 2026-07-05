@@ -1,0 +1,7 @@
+- Documentation:
+    - Homepage:
+        - abbr: HP
+          href: https://gethomepage.dev/
+    - Stack Repository:
+        - abbr: Git
+          href: https://forgejo.{{DOMAIN}}/

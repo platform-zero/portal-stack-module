@@ -1,0 +1,65 @@
+- Communication:
+    - Element:
+        href: https://element.{{DOMAIN}}/
+        description: Matrix web chat
+        icon: element.svg
+    - SOGo:
+        href: https://sogo.{{DOMAIN}}/
+        description: Mail, calendar, and contacts
+        icon: sogo.svg
+    - Mastodon:
+        href: https://mastodon.{{DOMAIN}}/
+        description: Federated social publishing
+        icon: mastodon.svg
+- Knowledge & Files:
+    - BookStack:
+        href: https://bookstack.{{DOMAIN}}/
+        description: Documentation
+        icon: bookstack.svg
+    - Seafile:
+        href: https://seafile.{{DOMAIN}}/
+        description: File sync and sharing
+        icon: seafile.svg
+    - Forgejo:
+        href: https://forgejo.{{DOMAIN}}/
+        description: Git hosting
+        icon: forgejo.svg
+- Work:
+    - JupyterHub:
+        href: https://jupyterhub.{{DOMAIN}}/
+        description: Shared notebooks
+        icon: jupyter.svg
+    - Planka:
+        href: https://planka.{{DOMAIN}}/
+        description: Kanban boards
+        icon: planka.svg
+    - Donetick:
+        href: https://donetick.{{DOMAIN}}/
+        description: Chores and recurring tasks
+        icon: mdi-check-circle-outline
+    - ERPNext:
+        href: https://erpnext.{{DOMAIN}}/
+        description: ERP and business workflows
+        icon: erpnext.svg
+- Home & Media:
+    - Home Assistant:
+        href: https://homeassistant.{{DOMAIN}}/
+        description: Home automation
+        icon: home-assistant.svg
+    - Jellyfin:
+        href: https://jellyfin.{{DOMAIN}}/
+        description: Media library
+        icon: jellyfin.svg
+    - qBittorrent:
+        href: https://qbittorrent.{{DOMAIN}}/
+        description: Transfers
+        icon: qbittorrent.svg
+- Local:
+    - TAS Events:
+        href: https://tas-events.{{DOMAIN}}/
+        description: Local event dashboard
+        icon: mdi-calendar-star
+    - Autobattler:
+        href: https://autobattler.{{DOMAIN}}/
+        description: Lab game service
+        icon: mdi-sword-cross
