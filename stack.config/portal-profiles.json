@@ -20,8 +20,7 @@
         "sogo",
         "matrix",
         "bookstack",
-        "seafile",
-        "chatgpt-connector"
+        "seafile"
       ]
     },
     {
@@ -71,8 +70,7 @@
         "matrix",
         "bookstack",
         "seafile",
-        "forgejo",
-        "chatgpt-connector"
+        "forgejo"
       ]
     },
     {
@@ -97,7 +95,6 @@
         "sogo",
         "bookstack",
         "seafile",
-        "chatgpt-connector",
         "grafana"
       ]
     },
@@ -105,12 +102,11 @@
       "id": "ai-data-analyst",
       "name": "AI / Data Analyst",
       "defaultView": "analysis-lab",
-      "purpose": "A launchpad for workspaces, notebooks, datasets, knowledge queries, AI drafts, and repeatable analysis.",
+      "purpose": "A launchpad for notebooks, datasets, knowledge queries, AI drafts, and repeatable analysis.",
       "widgets": [
         "huly_analysis_queue",
         "datasets",
         "recent_notebooks",
-        "workspace_launcher",
         "ingestion_jobs",
         "analysis_prompts",
         "agent_runs"
@@ -118,9 +114,7 @@
       "services": [
         "huly",
         "jupyterhub",
-        "workspace-provisioner",
         "search",
-        "chatgpt-connector",
         "pipeline",
         "seafile",
         "forgejo",
