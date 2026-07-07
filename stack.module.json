@@ -18,6 +18,7 @@
   "overlays": [
     "stack.compose/portal.yml",
     "stack.config/homepage",
+    "stack.config/portal-profiles.json",
     "stack.containers/test-runner/playwright-tests/tests/deep/forward-auth/homepage.spec.ts",
     "stack.kotlin/test-runner/src/main/kotlin/org/webservices/testrunner/suites/PortalUtilityServicesTests.kt"
   ],
