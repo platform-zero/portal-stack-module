@@ -54,12 +54,3 @@
         href: https://qbittorrent.{{DOMAIN}}/
         description: Transfers
         icon: qbittorrent.svg
-- Local:
-    - TAS Events:
-        href: https://tas-events.{{DOMAIN}}/
-        description: Local event dashboard
-        icon: mdi-calendar-star
-    - Autobattler:
-        href: https://autobattler.{{DOMAIN}}/
-        description: Lab game service
-        icon: mdi-sword-cross
