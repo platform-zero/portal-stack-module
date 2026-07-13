@@ -1,0 +1,22 @@
+---
+schemaVersion: 1
+module: "portal"
+target: "apps"
+services:
+  portal:
+    image: "ghcr.io/gethomepage/homepage:v1.13.2"
+    containerName: "portal"
+    lifecycle: "daemon"
+    updatePolicy: "registry"
+    placement: "rootful"
+    dependencies:
+      caddy: "started"
+    environment:
+      HOMEPAGE_ALLOWED_HOSTS: "${DOMAIN},portal.${DOMAIN},homepage.${DOMAIN},portal:3000"
+    networks:
+      caddy: null
+    volumes:
+    - "./configs/homepage:/app/config"
+    restart: "unless-stopped"
+networks: {}
+volumes: {}
