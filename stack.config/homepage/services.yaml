@@ -40,7 +40,7 @@
     - ERPNext:
         href: https://erpnext.{{DOMAIN}}/
         description: ERP and business workflows
-        icon: erpnext.svg
+        icon: mdi-cube-outline
 - Home & Media:
     - Home Assistant:
         href: https://homeassistant.{{DOMAIN}}/
