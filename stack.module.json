@@ -16,7 +16,6 @@
   "smoke": "external-only",
   "smokeUnsupportedReason": "requires generated bundle context, deployed networking, secrets, or service dependencies",
   "overlays": [
-    "stack.compose/portal.yml",
     "stack.config/homepage",
     "stack.config/portal-profiles.json",
     "stack.containers/test-runner/playwright-tests/tests/deep/forward-auth/homepage.spec.ts",

@@ -6,7 +6,7 @@
 - Lifecycle: `active`
 
 ## Owned overlays
-- `stack.compose/portal.yml`
+- `stack.runtime.yaml`
 - `stack.containers/portal`
 - `stack.kotlin/portal`
 
