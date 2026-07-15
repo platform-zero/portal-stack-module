@@ -29,6 +29,10 @@
         href: https://jupyterhub.{{DOMAIN}}/
         description: Shared notebooks
         icon: jupyter.svg
+    - Workload Spawner:
+        href: https://spawner.{{DOMAIN}}/
+        description: Operator-managed workspaces
+        icon: mdi-cube-send
     - Planka:
         href: https://planka.{{DOMAIN}}/
         description: Kanban boards
